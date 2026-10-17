@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#09090b" />
+    <title>QuantBet — Tracker de Apuestas Deportivas y Bankroll</title>
+    <meta name="description" content="Plataforma de seguimiento y analítica de apuestas deportivas, gestión de bankroll, ROI, historial diario y escaneo de tickets." />
+    <meta property="og:title" content="QuantBet — Tracker de Apuestas Deportivas y Bankroll" />
+    <meta property="og:description" content="Plataforma de seguimiento y analítica de apuestas deportivas, gestión de bankroll, ROI, historial diario y escaneo de tickets." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var raw = localStorage.getItem('quantbet_v1');
+          if (raw) {
+            var data = JSON.parse(raw);
+            if (data && data.settings && data.settings.theme === 'light') {
+              document.documentElement.classList.add('light');
+              document.documentElement.classList.remove('dark');
+            } else {
+              document.documentElement.classList.add('dark');
+              document.documentElement.classList.remove('light');
+            }
+          }
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body class="antialiased selection:bg-emerald-500/30">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

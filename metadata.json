@@ -1,0 +1,6 @@
+{
+  "name": "QuantBet — Tracker de Apuestas",
+  "description": "Plataforma de seguimiento y analítica de apuestas deportivas, gestión de bankroll, ROI, historial diario y escaneo de tickets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
